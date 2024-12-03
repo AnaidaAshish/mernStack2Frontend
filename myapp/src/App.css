@@ -1,9 +1,9 @@
 .App {
-  text-align: center;
-  display: flex;
+  /* text-align: center; */
+  /* display: flex; */
   /* justify-content: center;x */
   /* border: 1px solid black; */
-  margin:150px 250px 250px 500px ;
+  /* margin:150px 250px 250px 500px ; */
   width: 500px;
   height: 150px;
 }
