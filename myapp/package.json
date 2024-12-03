@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "proxy": "http://localhost:8000"
+    "proxy": "https://taskmanager-backend-hsso.onrender.com/api/v1"
   },
   "eslintConfig": {
     "extends": [

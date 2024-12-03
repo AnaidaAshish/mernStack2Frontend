@@ -18,7 +18,7 @@ const Login = () => {
       localStorage.setItem("token", res.data.token);
       navigate("/dashboard");
     } catch (error) {
-      setMessage(error.response?.data?.message || "Error logging in");
+      setMessage(error.response?.data?.message || "Error logging in. Please try again.");
     }
   };
 
