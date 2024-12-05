@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import api from "../../api";
+import "../Styles/TaskList.css"
 
 const TaskList = () => {
   const [tasks, setTasks] = useState([]);
@@ -25,8 +26,8 @@ const TaskList = () => {
       <ul>
         {tasks.map((task) => (
           <li key={task._id}>
-            {task.title} - {task.assignee ? task.assignee.email : "Unassigned"}{" "}
-            - {task.status}
+            <strong>{task.title}</strong> - Assigned by: {task.assignerEmail} -{" "}
+            {task.assignee ? task.assignee.email : "Unassigned"} - {task.status}
           </li>
         ))}
       </ul>

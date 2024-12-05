@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import api from "../../api";
+import "../Styles/Register.css"
 
 const Register = () => {
   const [formData, setFormData] = useState({
