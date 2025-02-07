@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import api from "../../api";
 import { toast } from "react-toastify";
+import "../Styles/TaskForm.css"
 
 const TaskForm = ({ fetchTasks }) => {
   const [formData, setFormData] = useState({

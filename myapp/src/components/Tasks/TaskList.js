@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import api from "../../api";
 import "../Styles/TaskList.css"
 import { useNavigate } from "react-router-dom";
+import "../Styles/TaskList.css"
 
 const TaskList = () => {
   const [tasks, setTasks] = useState([]);

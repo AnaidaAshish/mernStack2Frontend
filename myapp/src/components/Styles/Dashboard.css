@@ -1,0 +1,40 @@
+.dashboard-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .dashboard-container h1 {
+    margin-bottom: 20px;
+  }
+  
+  .task-list {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .task-item {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+  
+  .completed-task {
+    background-color: #d4edda;
+  }
+  
+  .dashboard-container button {
+    padding: 8px 15px;
+    font-size: 14px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .dashboard-container button:hover {
+    background-color: #c82333;
+  }
+  

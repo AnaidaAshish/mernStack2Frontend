@@ -3,6 +3,7 @@ import TaskForm from "../components/Tasks/TaskForm";
 import api from "../api";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "../components/Styles/Dashboard.css"
 
 const Dashboard = () => {
   const [tasks, setTasks] = useState([]);

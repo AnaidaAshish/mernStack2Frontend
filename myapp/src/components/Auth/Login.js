@@ -17,7 +17,7 @@ const Login = () => {
     try {
       const res = await api.post("/auth/login", formData);
       localStorage.setItem("token", res.data.token);
-      navigate("/dashboard");
+      navigate("/task-list");
     } catch (error) {
       setMessage(error.response?.data?.message || "Error logging in. Please try again.");
     }
