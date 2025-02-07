@@ -21,7 +21,7 @@ const Register = () => {
     try {
       const res = await api.post("/auth/register", formData);
       setMessage(res.data.message);
-      navigate("/tasks");
+      navigate("/task-list");
     } catch (error) {
       setMessage(error.response?.data?.message || "Error registering");
     }
