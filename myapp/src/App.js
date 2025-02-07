@@ -7,7 +7,8 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 import Home from "./components/Home";
-
+import TaskList from "./components/Tasks/TaskList";
+import TaskForm from "./components/Tasks/TaskForm";
 const App = () => {
   return (
     <div className="App">
