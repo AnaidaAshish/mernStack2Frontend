@@ -4,6 +4,7 @@ import { toast } from "react-toastify";
 import "../Styles/TaskForm.css"
 
 const TaskForm = ({ fetchTasks }) => {
+  console.log(fetchTasks)
   const [formData, setFormData] = useState({
     title: "",
     description: "",
