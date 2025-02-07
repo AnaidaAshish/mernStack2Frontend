@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import api from "../../api";
 import "../Styles/Register.css"
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
+  const navigate = useNavigate()
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -19,6 +21,7 @@ const Register = () => {
     try {
       const res = await api.post("/auth/register", formData);
       setMessage(res.data.message);
+      navigate("/tasks");
     } catch (error) {
       setMessage(error.response?.data?.message || "Error registering");
     }

@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import api from "../../api";
 import "../Styles/TaskList.css"
+import { useNavigate } from "react-router-dom";
 
 const TaskList = () => {
   const [tasks, setTasks] = useState([]);
-
+  const navigate = useNavigate()
   const fetchTasks = async () => {
     try {
       const res = await api.get("/tasks", {
@@ -23,6 +24,7 @@ const TaskList = () => {
   return (
     <div>
       <h2>My Tasks</h2>
+      <button onClick={() => navigate("/task-form")}>Create Task</button> 
       <ul>
         {tasks.map((task) => (
           <li key={task._id}>
