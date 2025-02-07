@@ -5,19 +5,21 @@ import Register from "./components/Auth/Register";
 import Dashboard from "./pages/Dashboard";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "./App.css"
+import "./App.css";
+import Home from "./components/Home";
 
 const App = () => {
   return (
     <div className="App">
-    <Router>
-      <Routes>
-        <Route path="/register" element={<Register />} />
-        <Route path="/" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-      </Routes>
-      <ToastContainer />
-    </Router>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
+        <ToastContainer />
+      </Router>
     </div>
   );
 };
