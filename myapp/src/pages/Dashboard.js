@@ -51,7 +51,7 @@ const Dashboard = () => {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       });
       toast.success("Task deleted successfully!");
-      fetchTasks(); // Refresh the task list
+      fetchTasks(); 
     } catch (error) {
       console.error(
         "Error deleting task:",
@@ -62,14 +62,14 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="parent">
+    <div className="dashboard-container">
       <h1>Task Dashboard</h1>
 
       <TaskForm fetchTasks={fetchTasks} />
       <ul>
         {tasks.map((task) => (
           <li
-            key={task._id} // Use _id instead of id
+            key={task._id} 
             className={task.status === "completed" ? "completed-task" : ""}
           >
             <strong>{task.title}</strong>: {task.description}
@@ -77,13 +77,11 @@ const Dashboard = () => {
               {task.status !== "completed" && (
                 <button onClick={() => markAsCompleted(task._id)}>
                   {" "}
-                  {/* Use _id */}
                   Mark as Completed
                 </button>
               )}
               <button onClick={() => deleteTask(task._id)}>
                 {" "}
-                {/* Use _id */}
                 Delete
               </button>
             </div>

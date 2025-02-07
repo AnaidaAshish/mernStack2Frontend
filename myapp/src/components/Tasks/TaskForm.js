@@ -32,7 +32,7 @@ const TaskForm = ({ fetchTasks }) => {
   };
 
   return (
-    <div className="parent">
+    <div className="task-form-container">
       <form onSubmit={handleSubmit}>
         <input
           type="text"

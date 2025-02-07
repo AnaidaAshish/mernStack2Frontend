@@ -23,7 +23,7 @@ const TaskList = () => {
   }, []);
 
   return (
-    <div>
+    <div className="task-list-container">
       <h2>My Tasks</h2>
       <button onClick={() => navigate("/task-form")}>Create Task</button> 
       <ul>
